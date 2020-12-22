@@ -1,5 +1,5 @@
 {
-  "name": "olx",
+  "name": "olx1",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Artiss90/OLX-project.git"
+    "url": "git+https://github.com/Annet-Bon/OLX1.git"
   },
   "keywords": [],
-  "author": "Artiss90",
+  "author": "Annet-Bon",
   "bugs": {
-    "url": "https://github.com/Artiss90/OLX-project"
+    "url": "https://github.com/Annet-Bon/OLX1"
   },
-  "homepage": "https://Artiss90.github.io/OLX-project",
+  "homepage": "https://Annet-Bon.github.io/OLX1",
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
