@@ -27,7 +27,7 @@ refs.touchLogo.addEventListener('click', renderMainPage);
 // const paginationSection = document.querySelector('pages-section'); //не работает
 // paginationSection.addEventListener(`click`, onCategoryClick) //не работает
 
-fetchCall(API_OLX, 1).then(render => document.querySelector('.cards').innerHTML = templateHomeCard(render)).then(history.pushState(null, null, '/main'))
+fetchCall(API_OLX, 1).then(render => document.querySelector('.cards').innerHTML = templateHomeCard(render))
 
 function renderMainPage(event) {
     event.preventDefault();
@@ -36,7 +36,7 @@ function renderMainPage(event) {
     refs.secondPage.classList.remove('active');
     refs.thirdPage.classList.remove('active');
 
-    history.pushState(null, null, '/main');
+    // history.pushState(null, null, '/main');
 
     fetchCall(API_OLX, 1).then(render => document.querySelector('.cards').innerHTML = templateHomeCard(render))
     .then(window.scrollTo({
@@ -52,7 +52,7 @@ function renderFirstPage(event) {
     refs.secondPage.classList.remove('active');
     refs.thirdPage.classList.remove('active');
 
-    history.pushState(null, null, '/page=1');
+    // history.pushState(null, null, '/page=1');
 
     fetchCall(API_OLX, 1).then(render => document.querySelector('.cards').innerHTML = templateHomeCard(render))
     .then(window.scrollTo({
@@ -68,7 +68,7 @@ function renderSecondPage(event) {
     refs.secondPage.classList.add('active');
     refs.thirdPage.classList.remove('active');
 
-    history.pushState(null, null, '/page=2');
+    // history.pushState(null, null, '/page=2');
 
     fetchCall(API_OLX, 2).then(render => document.querySelector('.cards').innerHTML = templateHomeCard(render))
     .then(window.scrollTo({
@@ -84,7 +84,7 @@ function renderThirdPage(event) {
     refs.secondPage.classList.remove('active');
     refs.thirdPage.classList.add('active');
 
-    history.pushState(null, null, '/page=3');
+    // history.pushState(null, null, '/page=3');
 
     fetchCall(API_OLX, 3).then(render => document.querySelector('.cards').innerHTML = templateHomeCard(render))
     .then(window.scrollTo({
